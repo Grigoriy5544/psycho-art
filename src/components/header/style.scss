@@ -1,0 +1,87 @@
+.header {
+  margin-top: 9px;
+  height: 70px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header__logo {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 38px;
+      color: #ffffff;
+      text-decoration: none;
+      span {
+        background-image: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+
+    #search {
+      position: relative;
+      width: 384px;
+      height: 50px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 0px solid transparent;
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.5);
+      outline: none;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .searchLabel {
+      position: absolute;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: 10px;
+      i {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 20px;
+      }
+    }
+
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      .header__list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+      }
+
+      .header__nav-btn {
+        padding: 10px 20px;
+        width: 171px;
+        height: 50px;
+        background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+        border-radius: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #FFFFFF;
+
+      }
+    }
+  }
+}

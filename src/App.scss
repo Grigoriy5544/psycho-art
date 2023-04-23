@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  //height: 100%;
+  background: linear-gradient(113.49deg, #984D38 -30.3%, #181E41 58.12%) no-repeat;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+  height: inherit;
+}

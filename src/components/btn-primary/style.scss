@@ -1,0 +1,17 @@
+.btn__primary {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0px solid transparent;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  outline: none;
+
+  &-active {
+    background: linear-gradient(214.02deg, #B75CFF 6.04%, #671AE4 92.95%);
+  }
+}
