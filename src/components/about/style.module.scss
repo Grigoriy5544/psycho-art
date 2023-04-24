@@ -12,6 +12,7 @@
 
   .about__image {
     border-radius: 10px;
+    user-select: none;
   }
 
   .about__info {
@@ -20,7 +21,7 @@
     flex-direction: column;
     justify-content: center;
 
-    .about__info-title {
+    .about__infoTitle {
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 700;
@@ -29,7 +30,7 @@
       color: #FFFFFF;
     }
 
-    .about__info-description {
+    .about__infoDescription {
       max-width: 588px;
       margin-top: 10px;
       margin-bottom: 30px;

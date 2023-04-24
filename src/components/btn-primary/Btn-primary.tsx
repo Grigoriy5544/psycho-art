@@ -1,10 +1,19 @@
-import "./style.scss"
+import {FC} from "react";
 
-const BtnPrimary = ({width, height, active, text}) => {
+import styles from "./style.module.scss"
+
+type BtnPrimaryProps = {
+    width: string,
+    height: string,
+    active?: boolean,
+    text: string
+}
+
+const BtnPrimary: FC<BtnPrimaryProps> = ({width, height, active = false, text}) => {
     return (
         <div
             style={{width: width + "px", height: height + "px"}}
-            className={`btn__primary ${active === "true" ? "btn__primary-active" : ""}`}>
+            className={`${styles.btn__primary} ${active === true ? styles.active : ""}`}>
             {text}
         </div>
     );

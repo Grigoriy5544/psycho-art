@@ -1,4 +1,4 @@
-import "./style.scss"
+import styles from "./Sponsored.module.scss"
 
 import binanceLogo from "./../../img/sponsors/Binance_logo logo.svg"
 import ethereumLogo from "./../../img/sponsors/Ethereum logo.svg"
@@ -6,17 +6,11 @@ import blockchainLogo from "./../../img/sponsors/Logo_of_Blockchain.io logo.svg"
 
 const Sponsored = () => {
     return (
-        <div className="sponsors">
-            <div className="container">
-                <div className="sponsor">
-                    <img src={binanceLogo} alt=""/>
-                </div>
-                <div className="sponsor">
-                    <img src={ethereumLogo} alt=""/>
-                </div>
-                <div className="sponsor">
-                    <img src={blockchainLogo} alt=""/>
-                </div>
+        <div className={styles.sponsors}>
+            <div className={`container ${styles.container}`}>
+                <img src={binanceLogo} alt=""/>
+                <img src={ethereumLogo} alt=""/>
+                <img src={blockchainLogo} alt=""/>
             </div>
         </div>
     );

@@ -1,9 +1,11 @@
-import "./style.scss"
+import {FC} from "react"
 
-const SectionDescription = ({text}) => {
+import styles from "./SectionDescription.module.scss"
+
+const SectionDescription: FC<{ text: string }> = ({text}) => {
     return (
-        <p className="section__description">{text}</p>
+        <p className={styles.description}>{text}</p>
     );
 };
 
-export default SectionDescription;
+export default SectionDescription

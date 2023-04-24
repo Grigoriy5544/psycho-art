@@ -1,4 +1,4 @@
-import "./style.scss"
+import styles from "./Home.module.scss"
 import BtnPrimary from "../btn-primary/Btn-primary.tsx";
 
 import img1 from "./../../img/home_heroi_image/1.png"
@@ -11,44 +11,44 @@ import img7 from "./../../img/home_heroi_image/7.png"
 
 const Home = () => {
     return (
-        <section className="home">
-            <div className="container">
-                <div className="home-left">
-                    <h1 className="home__title">Create, Sell & Collect Your Own Creative NFT</h1>
-                    <p className="home__description">
+        <section className={styles.home}>
+            <div className={`container ${styles.container}`}>
+                <div className={styles.homeLeft}>
+                    <h1 className={styles.homeTitle}>Create, Sell & Collect Your Own Creative NFT</h1>
+                    <p className={styles.homeDescription}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit.
                     </p>
-                    <div className="home__buttons">
-                        <BtnPrimary width="161" height="50" active="true" text="Explore Now"/>
+                    <div className={styles.home__buttons}>
+                        <BtnPrimary width="161" height="50" active={true} text="Explore Now"/>
                         <BtnPrimary width="117" height="50" text="Sell NFT"/>
                     </div>
-                    <div className="reviews">
-                        <div className="review__wrapper">
-                            <h3 className="review-title">37k+</h3>
-                            <p className="review-description">Artworks</p>
+                    <div className={styles.reviews}>
+                        <div>
+                            <h3 className={styles.reviewTitle}>37k+</h3>
+                            <p className={styles.reviewDescription}>Artworks</p>
                         </div>
-                        <div className="review__wrapper">
-                            <h3 className="review-title">20k+</h3>
-                            <p className="review-description">Artists</p>
+                        <div>
+                            <h3 className={styles.reviewTitle}>20k+</h3>
+                            <p className={styles.reviewDescription}>Artists</p>
                         </div>
-                        <div className="review__wrapper">
-                            <h3 className="review-title">99k+</h3>
-                            <p className="review-description">Aucations</p>
+                        <div>
+                            <h3 className={styles.reviewTitle}>99k+</h3>
+                            <p className={styles.reviewDescription}>Aucations</p>
                         </div>
                     </div>
                 </div>
-                <div className="home-right">
-                    <div className="column">
-                        <img src={img1} className="column__image1"/>
+                <div className={styles.homeRight}>
+                    <div className={styles.column}>
+                        <img src={img1} alt=""/>
                         <img src={img2} alt=""/>
                         <img src={img3} alt=""/>
                     </div>
-                    <div className="column">
-                        <img src={img4} className="column__image1"/>
+                    <div className={styles.column}>
+                        <img src={img4} alt=""/>
                         <img src={img5} alt=""/>
                         <img src={img6} alt=""/>
                     </div>
-                    <div className="column column3">
+                    <div className={`${styles.column} ${styles.column3}`}>
                         <img src={img7} alt=""/>
                     </div>
                 </div>

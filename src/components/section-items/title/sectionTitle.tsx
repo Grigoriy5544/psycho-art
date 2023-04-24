@@ -1,8 +1,10 @@
-import "./style.scss"
+import { FC } from "react";
 
-const SectionTitle = ({text}) => {
+import styles from "./SectionTitle.module.scss"
+
+const SectionTitle: FC<{text: string}> = ({text}) => {
     return (
-        <h2 className="section__title">{text}</h2>
+        <h2 className={styles.title}>{text}</h2>
     );
 };
 
