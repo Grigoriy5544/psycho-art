@@ -1,7 +1,15 @@
+import {FC} from "react";
 import styles from "./Card.module.scss"
 import BtnPrimary from "../btn-primary/Btn-primary.tsx";
 
-const Card = ({image, price, name, author}) => {
+interface IProps {
+    image: string,
+    price: number,
+    name: string,
+    author: string
+}
+
+const Card:FC<IProps> = ({image, price, name, author}) => {
     return (
         <div className={styles.card}>
             <img src={image} alt="" className={styles.img}/>

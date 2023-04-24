@@ -5,9 +5,16 @@ import img4 from "../img/colleactionImg/img4.png"
 import img5 from "../img/colleactionImg/img5.png"
 import img6 from "../img/colleactionImg/img6.png"
 
+interface IColleaction {
+        image: string,
+        price: number,
+        name: string,
+        author: string
+}
 
-const colleaction = {
-    "art": [
+
+let colleaction:Array<Array<IColleaction>> = [
+    [
         {
             image: img1,
             price: 5.5,
@@ -31,37 +38,37 @@ const colleaction = {
             price: 0.004,
             name: "Yellow Painting",
             author: "@Johny"
-        },{
-            image: img5,
-            price: 0.003,
-            name: "Yellow Painting",
-            author: "@Johny"
-        },{
-            image: img6,
-            price: 0.001,
-            name: "Yellow Painting",
-            author: "@Johny"
-        },
+        }, {
+        image: img5,
+        price: 0.003,
+        name: "Yellow Painting",
+        author: "@Johny"
+    }, {
+        image: img6,
+        price: 0.001,
+        name: "Yellow Painting",
+        author: "@Johny"
+    },
     ],
-    "sport": [
+    [
         {
             image: img5,
             price: 0.04,
             name: "Yellow Painting",
             author: "@Johny"
-        },{
-            image: img6,
-            price: 0.02,
-            name: "Yellow Painting",
-            author: "@Johny"
-        },{
-            image: img2,
-            price: 0.1,
-            name: "Yellow Painting",
-            author: "@Johny"
-        },
+        }, {
+        image: img6,
+        price: 0.02,
+        name: "Yellow Painting",
+        author: "@Johny"
+    }, {
+        image: img2,
+        price: 0.1,
+        name: "Yellow Painting",
+        author: "@Johny"
+    },
     ],
-    "photograpy": [
+    [
         {
             image: img1,
             price: 0.001,
@@ -81,7 +88,7 @@ const colleaction = {
             author: "@Johny"
         },
     ],
-    "pattern": [
+    [
         {
             image: img3,
             price: 0.06,
@@ -101,7 +108,6 @@ const colleaction = {
             author: "@Johny"
         },
     ]
-
-}
+]
 
 export {colleaction}
