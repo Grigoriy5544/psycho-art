@@ -5,6 +5,7 @@ import Sponsored from "./components/sponsored/Sponsored.tsx";
 import About from "./components/about/About.tsx";
 import Colleaction from "./components/colleaction/Colleaction.tsx";
 import FeaturedArtworks from "./components/featured-artworks/FeaturedArtworks.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
             <About/>
             <Colleaction/>
             <FeaturedArtworks/>
+            <Footer/>
         </>
     )
 }
