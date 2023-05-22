@@ -4,6 +4,7 @@ import Home from "./components/home/Home.tsx";
 import Sponsored from "./components/sponsored/Sponsored.tsx";
 import About from "./components/about/About.tsx";
 import Colleaction from "./components/colleaction/Colleaction.tsx";
+import FeaturedArtworks from "./components/featured-artworks/FeaturedArtworks.tsx";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Sponsored/>
             <About/>
             <Colleaction/>
+            <FeaturedArtworks/>
         </>
     )
 }
