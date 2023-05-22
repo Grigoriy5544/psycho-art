@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="container">
                 <div className={styles.groups}>
                     <div className={styles.group}>
-                        <a href="/" className={styles.logo}>Psycho<span>Art</span></a>
+                        <a href="#" className={styles.logo}>Psycho<span>Art</span></a>
                         <p className={styles.text}>The best NFT marketplace website in the world and feel your
                             experience in selling or buy our work</p>
                     </div>

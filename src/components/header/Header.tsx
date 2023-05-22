@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={`container ${styles.container}`}>
-                <a href="/" className={styles.logo}>Psycho<span>Art</span></a>
+                <a href="#" className={styles.logo}>Psycho<span>Art</span></a>
                 <div>
                     <label className={styles.searchLabel} htmlFor="search"><i
                         className="fa-solid fa-magnifying-glass"></i></label>
